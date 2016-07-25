@@ -1,0 +1,44 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Let the website listen to you.</h1>
+    <p>Try saying these lines:</p>
+    <ul>
+      <li>Hello</li>
+      <li>What is your name</li>
+      <li>Iam (tell your name)</li>
+    </ul>
+    </br>
+    <b>PS:</b><p>Its not yet done open your console and check how well this Library is listening to you!</p>
+
+  </body>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.4.0/annyang.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.4.0/annyang.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/speechkitt.min.js"></script>
+<script>
+if (annyang) {
+  // Add our commands to annyang
+  annyang.addCommands({
+    'hello': function() { alert('Hello world!'); },
+    'what is your name': function(){alert('My name is Annyang!');},
+    'I am *user':function(user){alert('Hello '+user+ ' whatsup?')}
+  });
+
+  // Tell KITT to use annyang
+  SpeechKITT.annyang();  
+
+  // Start listening.
+  annyang.start();
+
+  //listening word in console
+  annyang.debug();
+
+  // Define a stylesheet for KITT to use
+  SpeechKITT.setStylesheet('//cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/themes/flat.css');
+
+  // Render KITT's interface
+  SpeechKITT.vroom();
+}
+</script>
+</html>
