@@ -2,7 +2,7 @@
 
 * Clone the app
 * Run in the sever
-* Try sating command "I have to <-task to do->"
+* Try saying command "I have to <-task to do->"
 
 Eg: I have to "Book tickets for tomorrow trip"
 
