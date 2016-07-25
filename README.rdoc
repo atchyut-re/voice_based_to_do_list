@@ -9,6 +9,6 @@ Eg: I have to "Book tickets for tomorrow trip"
 Note: This app don't save any of the info in DB. So, make sure you save your info before you refresh or close the tab.
 
 
-Contributions: A special thanks to http://codepen.io/yesilfasulye/ for such a beautiful design.
+Contributions: A special thanks to https://github.com/yesilfasulye for such a beautiful design.
 
 
